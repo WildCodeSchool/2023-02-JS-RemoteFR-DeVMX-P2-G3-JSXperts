@@ -21,8 +21,8 @@ const list = [
   },
   {
     id: 5,
-    src: "https://robohash.org/107.png?set=set4&size=90x90",
-    criteria: ["purple", "spots", "no accessories"],
+    src: "https://robohash.org/112.png?set=set4&size=90x90",
+    criteria: ["dark grey", "no spots", "scarf"],
   },
   {
     id: 6,
@@ -61,13 +61,13 @@ const list = [
   },
   {
     id: 13,
-    src: "https://robohash.org/777.png?set=set4&size=90x90",
-    criteria: ["brown", "spots", "collar"],
+    src: "https://robohash.org/365.png?set=set4&size=90x90",
+    criteria: ["pink", "spots", "ribbon bow"],
   },
   {
     id: 14,
-    src: "https://robohash.org/444.png?set=set4&size=90x90",
-    criteria: ["dark grey", "no spots", "ribbon bow"],
+    src: "https://robohash.org/077.png?set=set4&size=90x90",
+    criteria: ["dark yellow", "spots", "collar"],
   },
   {
     id: 15,
@@ -81,8 +81,8 @@ const list = [
   },
   {
     id: 17,
-    src: "https://robohash.org/610.png?set=set4&size=90x90",
-    criteria: ["grey", "spots", "phone"],
+    src: "https://robohash.org/117.png?set=set4&size=90x90",
+    criteria: ["yellow", "spots", "scarf"],
   },
   {
     id: 18,
@@ -131,13 +131,13 @@ const list = [
   },
   {
     id: 27,
-    src: "https://robohash.org/211.png?set=set4&size=90x90",
-    criteria: ["pink", "no spots", "phone"],
+    src: "https://robohash.org/444.png?set=set4&size=90x90",
+    criteria: ["dark grey", "no spots", "ribbon bow"],
   },
   {
     id: 28,
-    src: "https://robohash.org/120.png?set=set4&size=90x90",
-    criteria: ["green", "no spots", "scarf"],
+    src: "https://robohash.org/106.png?set=set4&size=90x90",
+    criteria: ["pink", "no spots", "scarf"],
   },
   {
     id: 29,
@@ -146,12 +146,12 @@ const list = [
   },
   {
     id: 30,
-    src: "https://robohash.org/000.png?set=set4&size=90x90",
-    criteria: ["green", "no spots", "no accessories"],
+    src: "https://robohash.org/211.png?set=set4&size=90x90",
+    criteria: ["pink", "no spots", "phone"],
   },
   {
     id: 31,
-    src: "https://robohash.org/007.png?set=set4&size=90x90",
+    src: "https://robohash.org/380.png?set=set4&size=90x90",
     criteria: ["purple", "no spots", "no accessories"],
   },
   {

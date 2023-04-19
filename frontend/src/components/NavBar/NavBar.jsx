@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import { useState } from "react";
