@@ -1,0 +1,53 @@
+.centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  min-width: 100vw;
+}
+.homePage {
+  text-align: center;
+  font-weight: bold;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .playbtn {
+    width: 12rem;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    // animation: 5s linear 0s infinite alternate gamebtn;
+
+    button {
+      cursor: pointer;
+      width: 12rem;
+      height: 3rem;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+      width: 100%;
+      background-color: #ba9ae1;
+      border-radius: 20px;
+      border-style: inherit;
+    }
+  }
+}
+
+// @keyframes gamebtn {
+//   from {
+//   }
+//   to {
+//     transform: rotateY(360deg);
+//   }
+// }

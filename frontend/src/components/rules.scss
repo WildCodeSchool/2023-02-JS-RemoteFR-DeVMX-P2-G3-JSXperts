@@ -1,0 +1,23 @@
+.centering {
+  display: flex;
+  min-width: 100vw;
+  min-height: 80vh;
+  align-items: center;
+}
+.rules {
+  margin: auto 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 768px) {
+  .rules {
+    margin: auto 12vw;
+  }
+}

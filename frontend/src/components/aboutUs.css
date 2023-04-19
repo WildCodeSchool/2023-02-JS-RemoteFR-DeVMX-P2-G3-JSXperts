@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+}
+
+.about-wrapper {
+  text-align: center;
+}
+
+.thank-img {
+  text-align: center;
+}
+.thank-img img {
+  width: 20rem;
+}
+
+.charac-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.charac-img img {
+  width: 6rem;
+}
+
+hr {
+  display: none;
+}
+
+.cheerUs {
+  margin-top: 4rem;
+}
+.cheerUs p {
+  font-size: 1rem;
+}
+
+.ratingStars {
+  width: 20rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-wrapper {
+    display: flex;
+  }
+  .about-us {
+    margin: 5rem;
+  }
+  .cheerUs {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .charac-img {
+    flex-wrap: nowrap;
+  }
+  .thank-img img {
+    width: 30rem;
+  }
+  hr {
+    display: block;
+    margin-top: 5rem;
+    height: 80vh;
+  }
+} /*# sourceMappingURL=aboutUs.css.map */

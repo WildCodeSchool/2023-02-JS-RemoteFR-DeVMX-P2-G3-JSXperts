@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+}
+
+.about-wrapper {
+  text-align: center;
+  padding-bottom: 4rem;
+  min-height: 80vh;
+}
+
+.thank-img {
+  text-align: center;
+  img {
+    width: 20rem;
+  }
+}
+
+.charac-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  img {
+    width: 6rem;
+  }
+}
+
+hr {
+  display: none;
+}
+
+.cheerUs {
+  margin: 4rem auto;
+  max-width: 80vw;
+  p {
+    font-size: 1.2rem;
+    margin: auto 8%;
+  }
+}
+
+.ratingStars {
+  width: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .about-wrapper {
+    display: flex;
+  }
+  .about-us {
+    margin: 1rem auto;
+    width: 50vw;
+  }
+  .cheerUs {
+    width: 50vw;
+    margin: 4rem auto auto auto;
+  }
+
+  .charac-img {
+    flex-wrap: nowrap;
+  }
+
+  .thank-img {
+    img {
+      width: 30rem;
+    }
+  }
+  hr {
+    display: block;
+    margin-top: 5rem;
+    max-height: 80vh;
+  }
+}

@@ -1,0 +1,123 @@
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /*Mettre le menu burger en mobile first au lieu du flex wrap */
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(186, 154, 225);
+  color: white;
+  height: 4rem;
+  box-shadow: 0px 2px 2px rgb(186, 154, 225, 0.5),
+    0px 4px 4px rgb(186, 154, 225, 0.5), 0px 8px 8px rgb(186, 154, 225, 0.5),
+    0px 16px 16px rgb(186, 154, 225, 0.5);
+  position: relative;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+
+
+  h1 {
+    display: flex;
+    color: white;
+    justify-content: left;
+    margin-left: 0px;
+  }
+  .navbarlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -2px 0px 2px rgb(186, 154, 225, 0.5),
+      -4px 0px 4px rgb(186, 154, 225, 0.5), -8px 0px 8px rgb(186, 154, 225, 0.5),
+      -16px 0px 16px rgb(186, 154, 225, 0.5);
+    width: 350px;
+
+    .navbarItems {
+      list-style: none;
+      text-decoration: none;
+      font-size: 0, 5rem;
+      font-weight: 600;
+      color: white;
+    }
+  }
+  .navbarLink {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  }
+  .navbarLogo {
+    z-index: 1000;
+  }
+}
+.navbarBurger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .navbar .navbarlist {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    height: 100vh;
+    padding: 2rem;
+    background-color: #ba9ae1;
+    visibility: hidden;
+  }
+
+  .shownav .navbarlist {
+    right: 0;
+    visibility: visible;
+  }
+  .navbarLink {
+    display: block;
+    padding: 1.5rem;
+  }
+  .navbarBurger {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  .navbarBurger:hover {
+    cursor: pointer;
+  }
+  .burgerBar,
+  .burgerBar::before,
+  .burgerBar::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: #fff;
+    transition: all 0.5s ease-in-out;
+  }
+  .burgerBar::before,
+  .burgerBar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burgerBar::before {
+    transform: translateY(-12px);
+  }
+  .burgerBar::after {
+    transform: translateY(12px);
+  }
+  .shownav .burgerBar {
+    width: 0;
+    background: transparent;
+  }
+  .shownav .burgerBar::before {
+    transform: rotate(45deg);
+  }
+  .shownav .burgerBar::after {
+    transform: rotate(-45deg);
+  }
+}

@@ -1,0 +1,128 @@
+// @use "style";
+.btn-wrapper {
+  display: flex;
+  width: 2.5rem;
+  position: relative;
+}
+
+.criteria {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  justify-content: space-between;
+}
+
+.criteriaButtons {
+  background-color: #f7c96a;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 10px;
+  display: flex;
+
+  img {
+    height: auto;
+    width: 1.5rem;
+    transform: scale(1.5);
+    margin: auto;
+  }
+}
+
+.sideNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  position: absolute;
+  right: 3rem;
+  bottom: 1rem;
+
+  button {
+    border-radius: 50%;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .round1 {
+    background: #d9b97b;
+  }
+
+  .round2 {
+    background: #c93305;
+  }
+
+  .round3 {
+    background: #724133;
+  }
+
+  .round4 {
+    background: #2d1c19;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .btn-wrapper {
+    height: 6rem;
+    flex-direction: column;
+    width: fit-content;
+    margin: 4rem auto;
+  }
+  .criteria {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 15rem;
+  }
+
+  .sideNav {
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 4rem;
+    width: 10rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-wrapper {
+    height: 6rem;
+    flex-direction: column;
+    width: 15rem;
+    margin: 4rem auto;
+  }
+  .criteria {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .sideNav {
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 4rem;
+    width: 10rem;
+  }
+
+  .criteriaButtons {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+@media screen and (max-height: 768px) and (orientation: landscape) {
+  .criteria {
+    flex-direction: column;
+  }
+  .sideNav {
+    flex-direction: column;
+    right: 3rem;
+    bottom: 1rem;
+    width: auto;
+    height: 10rem;
+  }
+  .btn-wrapper {
+    height: fit-content;
+    margin: auto 2rem;
+    width: auto;
+    height: 15rem;
+  }
+}
