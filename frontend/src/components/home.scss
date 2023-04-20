@@ -1,20 +1,24 @@
-.centering {
+.centering-home {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 80vh;
+  justify-content: start;
+  height: 90vh;
   min-width: 100vw;
-}
-.homePage {
+  background-image: url(@assets/bghome.png);
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  }
+
+.container-homePage {
   text-align: center;
   font-weight: bold;
-  height: 15rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
   p {
@@ -24,9 +28,7 @@
   .playbtn {
     width: 12rem;
     height: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    // animation: 5s linear 0s infinite alternate gamebtn;
+    margin: 2rem auto 3.5rem auto;
 
     button {
       cursor: pointer;
@@ -44,10 +46,9 @@
   }
 }
 
-// @keyframes gamebtn {
-//   from {
-//   }
-//   to {
-//     transform: rotateY(360deg);
-//   }
-// }
+
+@media screen and (min-width: 768px){
+  .container-homePage {
+    margin-left: 10%;
+  }
+}

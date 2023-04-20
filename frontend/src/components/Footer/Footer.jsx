@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import "./Footer.scss";
 
 function Footer() {

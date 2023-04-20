@@ -1,4 +1,3 @@
-// import { Component } from 'react';
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
 import { useState } from "react";
@@ -34,7 +33,7 @@ function NavBar() {
           </li>
           <li className="navbarItems">
             <Link to="aboutUs" className="navbarLink">
-              Qui somme nous?
+              Qui sommes-nous ?
             </Link>
           </li>
         </ul>

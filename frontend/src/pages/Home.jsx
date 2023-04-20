@@ -4,8 +4,8 @@ import UselessFactsApi from "@components/Home.jsx/UselessFactsApi";
 
 export default function Home() {
   return (
-    <div className="centering">
-      <div className="homePage">
+    <div className="centering-home">
+      <div className="container-homePage">
         <h1>Bienvenue sur PiQui!</h1>
         <p>
           Vous pouvez consulter les <Link to="rules">regles du jeu</Link> avant
@@ -13,7 +13,7 @@ export default function Home() {
         </p>
         <p>Sinon vous pouvez directement jouer!</p>
         <Link to="game" className="playbtn">
-          <button type="button">PLAY</button>
+          <button type="button">JOUER</button>
         </Link>
         <UselessFactsApi />
       </div>

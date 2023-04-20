@@ -16,12 +16,7 @@ function CharactersGray() {
 
   return (
     <div>
-      <img
-        src={avatartest}
-        alt="avatar test"
-        // onClick={handleClick}
-        style={styles}
-      />
+      <img src={avatartest} alt="avatar test" style={styles} />
       <button type="button" onClick={handleClick}>
         mauvaise réponse
       </button>

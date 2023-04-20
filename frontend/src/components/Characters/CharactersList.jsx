@@ -12,22 +12,22 @@ const list = [
   {
     id: 3,
     src: "https://robohash.org/300.png?set=set4&size=90x90",
-    criteria: ["dark red", "no spots", "ribbon bow"],
+    criteria: ["dark red", "no spots", "accessories"],
   },
   {
     id: 4,
     src: "https://robohash.org/303.png?set=set4&size=90x90",
-    criteria: ["dark yellow", "spots", "bandana"],
+    criteria: ["dark yellow", "spots", "accessories"],
   },
   {
     id: 5,
-    src: "https://robohash.org/107.png?set=set4&size=90x90",
-    criteria: ["purple", "spots", "no accessories"],
+    src: "https://robohash.org/112.png?set=set4&size=90x90",
+    criteria: ["dark grey", "no spots", "collar"],
   },
   {
     id: 6,
     src: "https://robohash.org/118.png?set=set4&size=90x90",
-    criteria: ["orange", "spots", "glasses", "headphones"],
+    criteria: ["orange", "spots", "glasses", "accessories"],
   },
   {
     id: 7,
@@ -37,22 +37,22 @@ const list = [
   {
     id: 8,
     src: "https://robohash.org/155.png?set=set4&size=90x90",
-    criteria: ["white", "spots", "head scarf"],
+    criteria: ["white", "spots", "accessories"],
   },
   {
     id: 9,
     src: "https://robohash.org/169.png?set=set4&size=90x90",
-    criteria: ["orange", "spots", "hat"],
+    criteria: ["orange", "spots", "accessories"],
   },
   {
     id: 10,
     src: "https://robohash.org/999.png?set=set4&size=90x90",
-    criteria: ["white", "spots", "hat", "glasses"],
+    criteria: ["white", "spots", "accessories", "glasses"],
   },
   {
     id: 11,
     src: "https://robohash.org/901.png?set=set4&size=90x90",
-    criteria: ["yellow", "spots", "phone"],
+    criteria: ["yellow", "spots", "accessories"],
   },
   {
     id: 12,
@@ -61,13 +61,13 @@ const list = [
   },
   {
     id: 13,
-    src: "https://robohash.org/777.png?set=set4&size=90x90",
-    criteria: ["brown", "spots", "collar"],
+    src: "https://robohash.org/365.png?set=set4&size=90x90",
+    criteria: ["pink", "spots", "accessories"],
   },
   {
     id: 14,
-    src: "https://robohash.org/444.png?set=set4&size=90x90",
-    criteria: ["dark grey", "no spots", "ribbon bow"],
+    src: "https://robohash.org/077.png?set=set4&size=90x90",
+    criteria: ["dark yellow", "spots", "collar"],
   },
   {
     id: 15,
@@ -77,12 +77,12 @@ const list = [
   {
     id: 16,
     src: "https://robohash.org/712.png?set=set4&size=90x90",
-    criteria: ["dark red", "spots", "scarf"],
+    criteria: ["dark red", "spots", "collar"],
   },
   {
     id: 17,
-    src: "https://robohash.org/610.png?set=set4&size=90x90",
-    criteria: ["grey", "spots", "phone"],
+    src: "https://robohash.org/117.png?set=set4&size=90x90",
+    criteria: ["yellow", "spots", "collar"],
   },
   {
     id: 18,
@@ -92,7 +92,7 @@ const list = [
   {
     id: 19,
     src: "https://robohash.org/508.png?set=set4&size=90x90",
-    criteria: ["yellow", "spots", "head scarf"],
+    criteria: ["yellow", "spots", "accessories"],
   },
   {
     id: 20,
@@ -102,27 +102,27 @@ const list = [
   {
     id: 21,
     src: "https://robohash.org/082.png?set=set4&size=90x90",
-    criteria: ["dark red", "spots", "phone"],
+    criteria: ["dark red", "spots", "accessories"],
   },
   {
     id: 22,
     src: "https://robohash.org/138.png?set=set4&size=90x90",
-    criteria: ["white", "no spots", "glasses", "ribbon bow"],
+    criteria: ["white", "no spots", "glasses", "accessories"],
   },
   {
     id: 23,
     src: "https://robohash.org/140.png?set=set4&size=90x90",
-    criteria: ["orange", "spots", "glasses", "headphones"],
+    criteria: ["orange", "spots", "glasses", "accessories"],
   },
   {
     id: 24,
     src: "https://robohash.org/144.png?set=set4&size=90x90",
-    criteria: ["dark grey", "spots", "head scarf"],
+    criteria: ["dark grey", "spots", "accessories"],
   },
   {
     id: 25,
     src: "https://robohash.org/905.png?set=set4&size=90x90",
-    criteria: ["orange", "spots", "ribbon bow"],
+    criteria: ["orange", "spots", "accessories"],
   },
   {
     id: 26,
@@ -131,33 +131,33 @@ const list = [
   },
   {
     id: 27,
-    src: "https://robohash.org/211.png?set=set4&size=90x90",
-    criteria: ["pink", "no spots", "phone"],
+    src: "https://robohash.org/444.png?set=set4&size=90x90",
+    criteria: ["dark grey", "no spots", "accessories"],
   },
   {
     id: 28,
-    src: "https://robohash.org/120.png?set=set4&size=90x90",
-    criteria: ["green", "no spots", "scarf"],
+    src: "https://robohash.org/106.png?set=set4&size=90x90",
+    criteria: ["pink", "no spots", "collar"],
   },
   {
     id: 29,
     src: "https://robohash.org/129.png?set=set4&size=90x90",
-    criteria: ["dark yellow", "spots", "hat"],
+    criteria: ["dark yellow", "spots", "accessories"],
   },
   {
     id: 30,
-    src: "https://robohash.org/000.png?set=set4&size=90x90",
-    criteria: ["green", "no spots", "no accessories"],
+    src: "https://robohash.org/211.png?set=set4&size=90x90",
+    criteria: ["pink", "no spots", "accessories"],
   },
   {
     id: 31,
-    src: "https://robohash.org/007.png?set=set4&size=90x90",
+    src: "https://robohash.org/380.png?set=set4&size=90x90",
     criteria: ["purple", "no spots", "no accessories"],
   },
   {
     id: 32,
     src: "https://robohash.org/689.png?set=set4&size=90x90",
-    criteria: ["yellow", "no spots", "headphones"],
+    criteria: ["yellow", "no spots", "accessories"],
   },
 ];
 
