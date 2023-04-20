@@ -17,6 +17,8 @@ export default function Home() {
         </Link>
         <UselessFactsApi />
       </div>
+      <style type="text/css">{`.navbar {display: none}`}</style>
+      <style type="text/css">{`.FooterItems {display: none}`}</style>
     </div>
   );
 }

@@ -44,6 +44,13 @@ function NavBar() {
         >
           <span className="burgerBar" />
         </button>
+        <button
+          type="button"
+          className="navbarArrow"
+          onClick={handleShowsItems}
+        >
+          <span className="ArrowBar" />
+        </button>
       </div>
     </nav>
   );
