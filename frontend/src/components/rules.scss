@@ -1,22 +1,127 @@
-.centering {
-  display: flex;
-  min-width: 100vw;
-  min-height: 80vh;
-  align-items: center;
-}
-.rules {
-  margin: auto 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
 
-  h1 {
-    font-size: 3rem;
+.centering {
+  min-width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  .bubble-content {
+    z-index: 0;
   }
-  p {
-    font-size: 1.2rem;
-    font-weight: bold;
+  .bubble-content {
+    text-align: center;
+    background-color: #d5e9b7;
+    padding: 50px;
+    margin: 7%;
+    border-radius: 45px;
+
+    font-family: "Patrick Hand", cursive;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
+
+    .content1 {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      p {
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .gameBtnRules {
+        // font-family: 'Sigmar', cursive;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        padding: 13px 50px 13px;
+        outline: 0;
+        border: 1px solid black;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        position: relative;
+      }
+
+      .gameBtnRules:after {
+        content: "";
+        background-color: #dcbaff;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        height: 100%;
+        top: 7px;
+        left: 7px;
+        transition: 0.2s;
+      }
+
+      .gameBtnRules:hover::after {
+        top: 0px;
+        left: 0px;
+      }
+    }
   }
 }
+
+.buttons {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  .previousBtn {
+    background-image: url(@assets/previous_rules.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 55px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .nextBtn {
+    background-image: url(@assets/next_rules.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 60px;
+    height: 55px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.cat-img {
+  position: absolute;
+  bottom: 5%;
+  width: 180px;
+}
+
 @media screen and (min-width: 768px) {
-  .rules {
-    margin: auto 12vw;
+  .centering {
+    .bubble-content {
+      width: 80%;
+      margin: 5%;
+      margin-right: 6%;
+    }
+    .content1 {
+      align-items: center;
+      p {
+        font-size: 2.5rem;
+      }
+      .gameBtnRules {
+        position: relative;
+        width: 40rem;
+      }
+    }
+  }
+  .cat-img {
+    width: 300px;
   }
 }

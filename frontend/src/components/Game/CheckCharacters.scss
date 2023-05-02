@@ -1,5 +1,19 @@
 .checkChar {
+  img {
+    height: 5rem;
+    opacity: 1;
+    transition: ease-in 0.5s;
+  }
+
+  .notDisplayed {
+    visibility: hidden;
+    opacity: 0;
+    transition: ease-in 0.5s;
+  }
+  @media screen and (max-height: 500px) and (orientation: landscape) {
     img {
-        height: 5rem;
+      height: 3rem;
+      object-fit: cover;
     }
+  }
 }

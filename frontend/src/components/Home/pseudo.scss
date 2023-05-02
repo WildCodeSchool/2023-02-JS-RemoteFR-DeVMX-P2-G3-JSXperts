@@ -1,0 +1,40 @@
+.form-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.container-pseudo {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  .input-pseudo {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+}
+.playbtn {
+  margin: 2rem auto 3.5rem auto;
+
+  .btnhome {
+    width: 12rem;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    background-color: #ba9ae1;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 400ms;
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}

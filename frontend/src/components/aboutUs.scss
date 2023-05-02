@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import "./style";
+
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+@font-palette-values --Pink {
+  font-family: Rocher;
+  base-palette: 1;
+}
+
 * {
   margin: 0;
 }
@@ -20,8 +32,24 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+  .team-container {
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    box-shadow: -0px -2px 2px rgba(126, 126, 126, 0.4),
+      -2px -4px 2px rgba(126, 126, 126, 0.4),
+      -4px -6px 2px rgba(126, 126, 126, 0.4),
+      -6px -8px 2px rgba(126, 126, 126, 0.4);
+  }
   img {
     width: 6rem;
+    filter: drop-shadow(-2px -2px 2px rgb(0, 0, 0));
+  }
+  figcaption {
+    font-family: "Patrick Hand", cursive;
+    font-weight: bold;
+    font-size: 1.35rem;
   }
 }
 
@@ -32,14 +60,25 @@ hr {
 .cheerUs {
   margin: 4rem auto;
   max-width: 80vw;
+  .cat-heart {
+    width: 13rem;
+  }
+  h1 {
+    font-size: 3rem;
+    font-family: "Rocher";
+    font-palette: --Pink;
+    letter-spacing: 7px;
+  }
+  button {
+    border: none;
+    margin-top: 2.5rem;
+  }
   p {
-    font-size: 1.2rem;
+    text-align: start;
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.5rem;
     margin: auto 8%;
   }
-}
-
-.ratingStars {
-  width: 20rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,6 +95,9 @@ hr {
   .cheerUs {
     width: 50vw;
     margin: 4rem auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .charac-img {

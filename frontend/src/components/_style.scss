@@ -1,0 +1,9 @@
+$main-color: rgb(186, 154, 225);
+$gradient-color: rgb(186, 154, 225, 0.5);
+
+$btnWrapperWidth: clamp(18rem, 80%, 25rem);
+$criteriaMinWidth: 10rem;
+$criteriaMaxWidth: 20rem;
+$sideNavWidth: 15rem;
+$nbBtn: 4;
+$criteriaBtnWidth: calc(90% / $nbBtn);

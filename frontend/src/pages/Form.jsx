@@ -3,6 +3,7 @@ import "../components/form.scss";
 function Form() {
   return (
     <div className="container-form">
+      <div className="background" />
       <h2>CONTACT</h2>
       <div className="form">
         <div className="container-col">

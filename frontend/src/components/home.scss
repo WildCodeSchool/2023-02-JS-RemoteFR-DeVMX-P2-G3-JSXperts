@@ -1,14 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
 .centering-home {
   display: flex;
   align-items: center;
   justify-content: start;
   height: 90vh;
   min-width: 100vw;
-  background-image: url(@assets/bghome.png);
   background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-  }
+  background-size: cover;
+  background-position: center;
+}
 
 .container-homePage {
   text-align: center;
@@ -17,12 +23,20 @@
   flex-direction: column;
 
   h1 {
-    font-size: 3rem;
+    font-family: "Rocher";
+    font-size: 4rem;
     margin-bottom: 2rem;
   }
 
-  p {
-    font-size: 1.2rem;
+  .rules-link-text {
+    font-size: 1.6rem;
+    font-family: "Patrick Hand", cursive;
+    font-style: italic;
+  }
+
+  #facts {
+    font-size: 1.3rem;
+    font-family: "Patrick Hand", cursive;
   }
 
   .playbtn {
@@ -40,15 +54,126 @@
       text-decoration: none;
       width: 100%;
       background-color: #ba9ae1;
+      border: 1px solid #fff;
       border-radius: 20px;
-      border-style: inherit;
+      transition: transform 400ms;
+      &:hover {
+        transform: scale(1.15);
+      }
     }
   }
 }
 
+@function particles($max) {
+  $val: 0px 0px white;
+  @for $i from 1 through $max {
+    $val: #{$val}, random(2560px) + px random(2560px) + px white;
+  }
+  @return $val;
+}
 
-@media screen and (min-width: 768px){
+@mixin particles($max) {
+  box-shadow: particles($max);
+}
+
+/* animation particles */
+
+.page-bg,
+.animation-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.page-bg {
+  background: #111 url("@assets/bghome.png") no-repeat top center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.particle,
+.particle:after {
+  background: transparent;
+}
+
+.particle:after {
+  position: absolute;
+  content: "";
+  top: 2560px;
+}
+
+.particle-1 {
+  animation: animParticle 60s linear infinite;
+  @include particles(600);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-1:after {
+  @include particles(600);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-2 {
+  animation: animParticle 120s linear infinite;
+  @include particles(200);
+  height: 3px;
+  width: 3px;
+}
+
+.particle-2:after {
+  @include particles(200);
+  height: 3px;
+  width: 3px;
+}
+
+.particle-3 {
+  animation: animParticle 180s linear infinite;
+  @include particles(100);
+  height: 4px;
+  width: 4px;
+}
+
+.particle-3:after {
+  @include particles(100);
+  height: 4px;
+  width: 4px;
+}
+
+.particle-4 {
+  animation: animParticle 600s linear infinite;
+  @include particles(400);
+  height: 2px;
+  width: 2px;
+}
+
+.particle-4:after {
+  @include particles(400);
+  height: 2px;
+  width: 2px;
+}
+
+@keyframes animParticle {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(2560px * -1);
+  }
+}
+
+.page-wrapper {
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
   .container-homePage {
     margin-left: 10%;
+    width: 40rem;
   }
 }

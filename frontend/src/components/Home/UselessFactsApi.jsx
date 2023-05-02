@@ -6,8 +6,8 @@ function UselessFactsApi() {
 
   useEffect(() => {
     axios
-      .get("https://uselessfacts.jsph.pl/api/v2/facts/random?language=en")
-      .then((res) => setFact(res.data.text))
+      .get("https://meowfacts.herokuapp.com/?lang=fra")
+      .then((res) => setFact(res.data.data))
       .catch((err) => console.error(err));
   }, []);
   return <p id="facts">{fact}</p>;
