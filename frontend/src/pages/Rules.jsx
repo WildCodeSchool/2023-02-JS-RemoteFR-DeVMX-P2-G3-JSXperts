@@ -1,4 +1,6 @@
 import "../components/rules.scss";
+import useSound from "use-sound";
+import mp3File from "@assets/cats-meow-111.mp3";
 import catRules from "@assets/cat_rules.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -9,19 +11,18 @@ const rulesPages = [
   },
   {
     message:
-      "Dans PiQui votre objectif est de trouver un personnage mystère choisi au hasard, avant de ne plus avoir le droit de poser des questions !",
+      "Dans PiQui ton objectif est de trouver un chat mystère choisi au hasard, avant de ne plus avoir le droit de poser des questions !",
   },
   {
-    message: `Pour ça, tu vas pouvoir cliquer sur différents critères. Par exemple: "est-ce que le personnage que je dois deviner porte un chapeau ?" Je vais cliquer sur le critère chapeau pour avoir ma réponse
-    !`,
-  },
-  {
-    message:
-      "Une fois ton critère choisi, des personnages vont se griser. Cela t'indique qu'ils ne correspondent pas au personnage que tu dois deviner. L'objectif est d'éliminer le plus de profils avec le moins de coups possibles !",
+    message: `Pour ça, tu vas pouvoir cliquer sur différents critères. Par exemple: "est-ce que le chat que je dois deviner porte un chapeau ?" Je vais cliquer sur le critère chapeau pour avoir ma réponse !`,
   },
   {
     message:
-      "Si ton compteur de questions arrive à zéro, tu peux cliquer sur l'un des personnages pour vérifier si c'est le personnage mystère. Et si tu es sûr(e) de toi, tu n'es même pas obligé(e) d'attendre !",
+      "Une fois ton critère choisi, des chats vont se griser. Cela t'indique qu'ils ne correspondent pas au chat que tu dois deviner. L'objectif est d'éliminer le plus de profils avec le moins de coups possibles !",
+  },
+  {
+    message:
+      "Si ton compteur de questions arrive à zéro, tu peux cliquer sur l'un des chats pour vérifier si c'est le chat mystère. Tu as trois chances ! Et si tu es sûr(e) de toi, tu n'es même pas obligé(e) d'attendre !",
   },
   {
     message: "Prêt(e) à relever le défi ?",
@@ -30,6 +31,7 @@ const rulesPages = [
 
 export default function Rules() {
   const [textIndex, setTextIndex] = useState(0);
+  const [play] = useSound(mp3File);
 
   const textPrevious = () => {
     setTextIndex(textIndex - 1);
@@ -37,7 +39,6 @@ export default function Rules() {
   const textNext = () => {
     setTextIndex(textIndex + 1);
   };
-
   return (
     <div className="centering">
       <div className="background" />
@@ -50,6 +51,7 @@ export default function Rules() {
                 type="button"
                 aria-label="gameBtnRules"
                 className="gameBtnRules"
+                onClick={play}
               >
                 C'est parti !
               </button>

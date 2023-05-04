@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import Home from "@pages/Home";
 import "./App.scss";
 import Game from "@pages/Game";
@@ -10,6 +11,9 @@ import Footer from "@components/Footer/Footer";
 import Layout from "@components/Layout";
 
 function App() {
+  const [registeredPseudo, setRegisteredPseudo] = useState("");
+  const [wins, setWins] = useState(0);
+
   return (
     <Router>
       <div className="App">
@@ -17,31 +21,59 @@ function App() {
           <Route
             path="/"
             element={
-              <Layout>
-                <Home />
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
+                <Home
+                  setWins={setWins}
+                  registeredPseudo={registeredPseudo}
+                  setRegisteredPseudo={setRegisteredPseudo}
+                />
               </Layout>
             }
           />
           <Route
             path="game"
             element={
-              <Layout>
-                <Game />
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
+                <Game
+                  registeredPseudo={registeredPseudo}
+                  wins={wins}
+                  setWins={setWins}
+                />
               </Layout>
             }
           />
           <Route
             path="game/:pseudo"
             element={
-              <Layout>
-                <Game />
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
+                <Game
+                  registeredPseudo={registeredPseudo}
+                  wins={wins}
+                  setWins={setWins}
+                />
               </Layout>
             }
           />
           <Route
             path="rules"
             element={
-              <Layout>
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
                 <Rules />
               </Layout>
             }
@@ -49,7 +81,11 @@ function App() {
           <Route
             path="rules/:pseudo"
             element={
-              <Layout>
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
                 <Rules />
               </Layout>
             }
@@ -57,7 +93,11 @@ function App() {
           <Route
             path="contact"
             element={
-              <Layout>
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
                 <Form />
               </Layout>
             }
@@ -65,7 +105,11 @@ function App() {
           <Route
             path="contact/:pseudo"
             element={
-              <Layout>
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
                 <Form />
               </Layout>
             }
@@ -73,7 +117,11 @@ function App() {
           <Route
             path="aboutUs"
             element={
-              <Layout>
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
                 <AboutUs />
               </Layout>
             }
@@ -81,7 +129,11 @@ function App() {
           <Route
             path="aboutUs/:pseudo"
             element={
-              <Layout>
+              <Layout
+                setRegisteredPseudo={setRegisteredPseudo}
+                registeredPseudo={registeredPseudo}
+                wins={wins}
+              >
                 <AboutUs />
               </Layout>
             }

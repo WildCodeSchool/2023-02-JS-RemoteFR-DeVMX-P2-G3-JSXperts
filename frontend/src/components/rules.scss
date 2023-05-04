@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+@import "./style";
 
 .centering {
   min-width: 100vw;
@@ -13,12 +12,12 @@
   }
   .bubble-content {
     text-align: center;
-    background-color: #d5e9b7;
+    background-color: $secondary-color;
     padding: 50px;
     margin: 7%;
     border-radius: 45px;
 
-    font-family: "Patrick Hand", cursive;
+    font-family: $primary-font;
     font-size: 2rem;
     letter-spacing: -1.5px;
 
@@ -35,7 +34,6 @@
       }
 
       .gameBtnRules {
-        // font-family: 'Sigmar', cursive;
         font-size: 25px;
         font-weight: bold;
         letter-spacing: 4px;
@@ -49,7 +47,7 @@
 
       .gameBtnRules:after {
         content: "";
-        background-color: #dcbaff;
+        background-color: $tertiary-color;
         width: 100%;
         z-index: -1;
         position: absolute;

@@ -29,44 +29,74 @@ function AboutUs() {
         </figure>
         <figure className="charac-img">
           <div className="team-container">
-            <img
-              className="front-character"
-              src={flip ? alaric : alariccat}
-              alt="Alaric character"
-            />
-            <figcaption>Alaric</figcaption>
+            <a
+              href="https://www.linkedin.com/in/alarichenrot/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="front-character"
+                src={flip ? alaric : alariccat}
+                alt="Alaric character"
+              />
+              <figcaption>Alaric</figcaption>
+            </a>
           </div>
           <div className="team-container">
-            <img
-              className="front-character"
-              src={flip ? amani : amanicat}
-              alt="Amani character"
-            />
-            <figcaption>Amani</figcaption>
+            <a
+              href="https://www.linkedin.com/in/amani-nefzi/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="front-character"
+                src={flip ? amani : amanicat}
+                alt="Amani character"
+              />
+              <figcaption>Amani</figcaption>
+            </a>
           </div>
           <div className="team-container">
-            <img
-              className="front-character"
-              src={flip ? charlotte : charlottecat}
-              alt="Charlotte character"
-            />
-            <figcaption>Charlotte</figcaption>
+            <a
+              href="https://www.linkedin.com/in/charlotte-charrier-81b48215b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="front-character"
+                src={flip ? charlotte : charlottecat}
+                alt="Charlotte character"
+              />
+              <figcaption>Charlotte</figcaption>
+            </a>
           </div>
           <div className="team-container">
-            <img
-              className="front-character"
-              src={flip ? rudy : rudycat}
-              alt="Rudy character"
-            />
-            <figcaption>Rudy</figcaption>
+            <a
+              href="https://www.linkedin.com/in/rudy-rano/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="front-character"
+                src={flip ? rudy : rudycat}
+                alt="Rudy character"
+              />
+              <figcaption>Rudy</figcaption>
+            </a>
           </div>
           <div className="team-container">
-            <img
-              className="front-character"
-              src={flip ? trung : trungcat}
-              alt="Trung character"
-            />
-            <figcaption>Trung</figcaption>
+            <a
+              href="https://www.linkedin.com/in/trung-nguyen-4a5229268/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="front-character"
+                src={flip ? trung : trungcat}
+                alt="Trung character"
+              />
+              <figcaption>Trung</figcaption>
+            </a>
           </div>
         </figure>
       </div>

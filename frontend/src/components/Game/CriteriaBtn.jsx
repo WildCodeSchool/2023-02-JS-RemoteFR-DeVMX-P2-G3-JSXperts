@@ -56,15 +56,15 @@ function CriteriaBtn({
           className="criteriaButtons"
           onClick={toggleColors}
         >
-          <img src={colorPicker} alt="illustration choix de couleur" />
+          <img src={colorPicker} alt="choix de couleur" />
         </button>
         <button
           type="button"
           className="criteriaButtons"
-          value="accessories"
+          value="headAccessories"
           onClick={handleCriteria}
         >
-          <img src={hat} alt="illustration chapeau" />
+          <img src={hat} alt="chapeau" />
         </button>
         <button
           type="button"
@@ -72,7 +72,7 @@ function CriteriaBtn({
           value="collar"
           onClick={handleCriteria}
         >
-          <img src={collar} alt="illustration collier" />
+          <img src={collar} alt="collier" />
         </button>
         <button
           type="button"
@@ -80,7 +80,7 @@ function CriteriaBtn({
           value="spots"
           onClick={handleCriteria}
         >
-          <img src={spots} alt="illustration tâches" />
+          <img src={spots} alt="tâches" />
         </button>
       </div>
       {showColors && (

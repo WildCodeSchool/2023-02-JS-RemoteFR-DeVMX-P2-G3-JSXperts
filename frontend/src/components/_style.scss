@@ -1,6 +1,24 @@
+/* COLOR */
 $main-color: rgb(186, 154, 225);
+$secondary-color: #d5e9b7;
+$tertiary-color: #d6c2ed;
 $gradient-color: rgb(186, 154, 225, 0.5);
 
+/* FONT */
+$primary-font: "Patrick Hand", cursive;
+$title-font: "Rocher";
+
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+@font-palette-values --Pink {
+  font-family: Rocher;
+  base-palette: 1;
+}
+
+/* CRITERIA BUTTONS */
 $btnWrapperWidth: clamp(18rem, 80%, 25rem);
 $criteriaMinWidth: 10rem;
 $criteriaMaxWidth: 20rem;

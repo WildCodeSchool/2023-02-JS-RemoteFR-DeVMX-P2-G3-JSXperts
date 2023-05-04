@@ -1,9 +1,8 @@
 @import "../_style";
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 .navbar {
   display: flex;
-  flex-wrap: wrap; /*Mettre le menu burger en mobile first au lieu du flex wrap */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: $main-color;
@@ -13,14 +12,19 @@
   position: relative;
   padding: 0 20px;
   box-sizing: border-box;
-
-  h1 {
-    display: flex;
-    justify-content: left;
-    margin-left: 0px;
+  z-index: 1;
+  .logo-img {
+    width: 8rem;
   }
+
+  .display-acc-name {
+    color: white;
+    font-family: $primary-font;
+    font-size: clamp(0.6rem, 1.5vw, 1.25rem);
+  }
+
   .navbarPseudo {
-    font-family: "Patrick Hand", cursive;
+    font-family: $primary-font;
     color: white;
     font-size: 2rem;
   }
@@ -34,23 +38,38 @@
     .navbarItems {
       list-style: none;
       text-decoration: none;
-      .navbarLink {
-        font-family: "Patrick Hand", cursive;
-        font-size: 1.25rem;
+
+      button {
+        border: none;
+        font-family: $primary-font;
         font-weight: bold;
-        letter-spacing: 2.5px;
+        letter-spacing: 2px;
+        color: white;
+        background: none;
         &:hover {
           transition: 0.5s;
-          color: #ba9ae1;
+          color: $main-color;
+          background: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0px 4px 0px 0px $gradient-color;
+        }
+      }
+      .navbarLink {
+        font-family: $primary-font;
+        font-weight: bold;
+        letter-spacing: 2px;
+        &:hover {
+          transition: 0.5s;
+          color: $main-color;
           background: #ffffff;
           border-radius: 10px;
           box-shadow: 0px 4px 0px 0px $gradient-color;
         }
         &:focus,
         &:active {
-          color: #ba9ae1;
+          color: $main-color;
           background: #ffffff;
-          border: 1px solid #ba9ae1;
+          border: 1px solid $main-color;
           border-radius: 10px;
           box-shadow: 0px 4px 0px 0px $gradient-color;
         }
@@ -77,7 +96,7 @@
   display: none;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 810px) {
   .navbar .navbarlist {
     flex-direction: column;
     justify-content: center;
@@ -92,13 +111,25 @@
     transition: all 0.6s ease-in-out;
   }
 
+  .navbarItems {
+    button {
+      font-size: 1.25rem;
+    }
+
+    .navbarLink {
+      font-size: 1.25rem;
+    }
+  }
+
   .shownav .navbarlist {
     right: 0;
     visibility: visible;
   }
-  .navbarLink {
-    display: block;
-    padding: 1.5rem;
+  .navbarItems {
+    .navbarLink {
+      display: block;
+      padding: 1.5rem;
+    }
   }
   .navbarBurger {
     display: block;
@@ -142,5 +173,16 @@
   }
   .shownav .burgerBar::after {
     transform: rotate(-45deg);
+  }
+}
+@media screen and (min-width: 810px) {
+  .navbarItems {
+    button {
+      font-size: clamp(0.6rem, 1.5vw, 1.25rem);
+    }
+
+    .navbarLink {
+      font-size: clamp(0.6rem, 1.5vw, 1.25rem);
+    }
   }
 }

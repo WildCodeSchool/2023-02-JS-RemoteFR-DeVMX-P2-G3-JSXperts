@@ -2,7 +2,7 @@
 
 .GamePage {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   margin: 20px 20px 0 20px;
 
@@ -24,7 +24,7 @@
       background-color: white;
 
       .disabled {
-        background-color: #d5e9b7;
+        background-color: $secondary-color;
         filter: grayscale(0);
         transform: rotateX(180deg);
         img {
@@ -121,8 +121,14 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 5vh;
+    padding: 2% 1% 2% 1%;
     height: 60vh;
-    width: 25%;
+    width: 15%;
+
+    text-align: center;
+    border: thick double $main-color;
+    border-radius: 10px;
+    background-color: white;
 
     figure {
       display: flex;
@@ -130,17 +136,20 @@
       align-items: center;
 
       figcaption {
+        font-family: $primary-font;
         font-size: clamp(0.8rem, 1.5vw, 1.8rem);
+        color: $main-color;
+        text-shadow: 1px 1px 1px black;
         margin-top: 1rem;
         text-align: center;
       }
     }
     p {
-      text-align: center;
-      font-size: 1.5rem;
+      font-family: $primary-font;
+      font-size: clamp(0.8rem, 1.8vw, 1.8rem);
       font-weight: 700;
-      color: purple;
-      margin-bottom: 1rem;
+      color: $main-color;
+      text-shadow: 1px 1px 1px black;
     }
     button {
       background-color: $main-color;
@@ -148,10 +157,12 @@
       font-weight: 600;
       letter-spacing: 1px;
       color: white;
+      margin-top: 0.5rem;
       padding: 15px 35px;
-      border-radius: 40px;
-      border: none;
+      border-radius: 20px;
+      border: 1px solid gray;
       &:hover {
+        transition: 0.3s;
         transform: scale(1.15);
       }
     }
@@ -159,8 +170,7 @@
 }
 
 .guess {
-  filter: brightness(0);
-  width: 7rem;
+  width: 50%;
 }
 .winner {
   height: 7rem;
@@ -200,6 +210,10 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(8, 1fr);
         gap: 5px;
+        height: 80%;
+        button {
+          width: 83%;
+        }
       }
     }
 
@@ -236,7 +250,7 @@
     .rightSide {
       margin-top: 0;
       height: 60vh;
-      width: 25%;
+      width: 15%;
 
       figure {
         img {
