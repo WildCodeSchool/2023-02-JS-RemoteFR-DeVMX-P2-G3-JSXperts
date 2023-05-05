@@ -25,6 +25,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Home
                   setWins={setWins}
@@ -41,6 +42,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Game
                   registeredPseudo={registeredPseudo}
@@ -57,6 +59,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Game
                   registeredPseudo={registeredPseudo}
@@ -73,6 +76,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Rules />
               </Layout>
@@ -85,6 +89,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Rules />
               </Layout>
@@ -97,6 +102,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Form />
               </Layout>
@@ -109,6 +115,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <Form />
               </Layout>
@@ -121,6 +128,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <AboutUs />
               </Layout>
@@ -133,6 +141,7 @@ function App() {
                 setRegisteredPseudo={setRegisteredPseudo}
                 registeredPseudo={registeredPseudo}
                 wins={wins}
+                setWins={setWins}
               >
                 <AboutUs />
               </Layout>

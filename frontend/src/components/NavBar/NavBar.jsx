@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import useSound from "use-sound";
 import mp3File from "@assets/cats-meow-111.mp3";
 
-function NavBar({ setRegisteredPseudo, registeredPseudo, wins }) {
+function NavBar({ setRegisteredPseudo, registeredPseudo, wins, setWins }) {
   const [showItems, setShowItems] = useState(false);
   const { pseudo } = useParams();
   const [play] = useSound(mp3File);
@@ -30,7 +30,13 @@ function NavBar({ setRegisteredPseudo, registeredPseudo, wins }) {
         <ul className="navbarlist">
           {registeredPseudo && (
             <li className="navbarItems">
-              <button type="button" onClick={() => setRegisteredPseudo("")}>
+              <button
+                type="button"
+                onClick={() => {
+                  setRegisteredPseudo("");
+                  setWins(0);
+                }}
+              >
                 Se déconnecter
               </button>
             </li>
@@ -117,6 +123,7 @@ function NavBar({ setRegisteredPseudo, registeredPseudo, wins }) {
 NavBar.propTypes = {
   registeredPseudo: PropTypes.string.isRequired,
   wins: PropTypes.number.isRequired,
+  setWins: PropTypes.func.isRequired,
   setRegisteredPseudo: PropTypes.func.isRequired,
 };
 

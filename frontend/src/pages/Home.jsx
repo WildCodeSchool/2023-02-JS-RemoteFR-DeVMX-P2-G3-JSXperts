@@ -70,27 +70,31 @@ export default function Home({
               >
                 <h2>Inscription</h2>
               </button>
-              <div className="register-input">
-                <label htmlFor="regPseudo">Pseudo</label>
-                <input
-                  id="regPseudo"
-                  type="text"
-                  onChange={(e) => {
-                    setUserNameReg(e.target.value);
-                  }}
-                />
-                <label htmlFor="regPassword">Mot de passe</label>
-                <input
-                  id="regPassword"
-                  type="password"
-                  onChange={(e) => {
-                    setPasswordReg(e.target.value);
-                  }}
-                />
-                <button onClick={register} type="button">
-                  Créer
-                </button>
-              </div>
+              <form>
+                <div className="register-input">
+                  <label htmlFor="regPseudo">Pseudo</label>
+                  <input
+                    autoComplete="username"
+                    id="regPseudo"
+                    type="text"
+                    onChange={(e) => {
+                      setUserNameReg(e.target.value);
+                    }}
+                  />
+                  <label htmlFor="regPassword">Mot de passe</label>
+                  <input
+                    autoComplete="current-password"
+                    id="regPassword"
+                    type="password"
+                    onChange={(e) => {
+                      setPasswordReg(e.target.value);
+                    }}
+                  />
+                  <button onClick={register} type="button">
+                    Créer
+                  </button>
+                </div>
+              </form>
             </div>
             <div className="login">
               <button
@@ -103,27 +107,31 @@ export default function Home({
               >
                 <h2>Connexion</h2>
               </button>
-              <div className="login-input">
-                <label htmlFor="pseudo">Pseudo</label>
-                <input
-                  id="pseudo"
-                  type="text"
-                  onChange={(e) => {
-                    setUserName(e.target.value);
-                  }}
-                />
-                <label htmlFor="password">Mot de passe</label>
-                <input
-                  id="password"
-                  type="password"
-                  onChange={(e) => {
-                    setPassword(e.target.value);
-                  }}
-                />
-                <button onClick={login} type="button">
-                  Se connecter
-                </button>
-              </div>
+              <form>
+                <div className="login-input">
+                  <label htmlFor="pseudo">Pseudo</label>
+                  <input
+                    autoComplete="username"
+                    id="pseudo"
+                    type="text"
+                    onChange={(e) => {
+                      setUserName(e.target.value);
+                    }}
+                  />
+                  <label htmlFor="password">Mot de passe</label>
+                  <input
+                    autoComplete="current-password"
+                    id="password"
+                    type="password"
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                    }}
+                  />
+                  <button onClick={login} type="button">
+                    Se connecter
+                  </button>
+                </div>
+              </form>
               <h3>{loginStatus}</h3>
             </div>
           </div>

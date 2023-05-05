@@ -45,14 +45,24 @@ function Game({ setWins, wins, registeredPseudo }) {
   };
 
   useEffect(() => {
-    axios.patch(`${import.meta.env.VITE_BACKEND_URL}/win-counter`, {
-      wins,
-      registeredPseudo,
-    });
+    axios
+      .patch(`${import.meta.env.VITE_BACKEND_URL}/win-counter`, {
+        wins,
+        registeredPseudo,
+      })
+      .catch((err) => console.error(err));
   }, [wins]);
 
   useEffect(() => {
+    newList = shuffle();
+    setInGame(newList);
     handleRandomCharSelect();
+    for (const i of disabled) {
+      i.classList.remove("disabled");
+    }
+    for (const i of newList) {
+      i.active = true;
+    }
   }, []);
 
   // fonction bouton replay//
