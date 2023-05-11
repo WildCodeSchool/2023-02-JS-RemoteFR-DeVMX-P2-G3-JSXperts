@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import "./checkCharacters.scss";
 import { useEffect } from "react";
+import yespng from "@assets/yes-png.jpg";
+import nopng from "@assets/no-png.jpg";
 
 function CheckCharacter({ criteria, crit, inGame, setInGame, list }) {
   // props: criteria is array criteria of mistery cat
@@ -35,13 +37,13 @@ function CheckCharacter({ criteria, crit, inGame, setInGame, list }) {
       {criteria && criteria.includes(crit) ? (
         <img
           className="images notDisplayed"
-          src="../src/assets/yes-png.jpg"
+          src={yespng}
           alt="le personnage mystère a bien ce critère"
         />
       ) : (
         <img
           className="images notDisplayed"
-          src="../src/assets/no-png.jpg"
+          src={nopng}
           alt="le personnage mystère n'a pas ce critère"
         />
       )}
