@@ -46,6 +46,7 @@ function CriteriaBtn({
           type="button"
           className="criteriaButtons"
           value="glasses"
+          title="Lunettes"
           onClick={handleCriteria}
         >
           <img src={glasses} alt="illustration lunettes" />
@@ -54,6 +55,7 @@ function CriteriaBtn({
         <button
           type="button"
           className="criteriaButtons"
+          title="Palette couleur"
           onClick={toggleColors}
         >
           <img src={colorPicker} alt="choix de couleur" />
@@ -62,6 +64,7 @@ function CriteriaBtn({
           type="button"
           className="criteriaButtons"
           value="headAccessories"
+          title="Accessoires de tête"
           onClick={handleCriteria}
         >
           <img src={hat} alt="chapeau" />
@@ -70,6 +73,7 @@ function CriteriaBtn({
           type="button"
           className="criteriaButtons"
           value="collar"
+          title="Collier/Echarpe"
           onClick={handleCriteria}
         >
           <img src={collar} alt="collier" />
@@ -78,6 +82,7 @@ function CriteriaBtn({
           type="button"
           className="criteriaButtons"
           value="spots"
+          title="Tâches"
           onClick={handleCriteria}
         >
           <img src={spots} alt="tâches" />
